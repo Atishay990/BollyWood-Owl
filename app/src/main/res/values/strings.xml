@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bowl</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_heading">Welcome To The World Of Movies</string>
+</resources>

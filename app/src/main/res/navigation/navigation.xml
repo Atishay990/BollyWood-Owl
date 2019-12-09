@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieFragment">
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.bowl.MovieFragment"
+        android:label="MovieFragment"
+        tools:layout="@layout/fragment_movie"/>
+    <fragment
+        android:id="@+id/titleFragment2"
+        android:name="com.example.bowl.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title"
+        app:startDestination="@id/action_titleFragment2_to_movieFragment">
+        <action
+            android:id="@+id/action_titleFragment2_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
+</navigation>
