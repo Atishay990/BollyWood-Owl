@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/movieFragment">
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.android.navigation.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_movieFragment"
+            app:destination="@id/movieFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.bowl.MovieFragment"
-        android:label="MovieFragment"
+        android:name="com.example.android.navigation.MovieFragment"
+        android:label="fragment_movie"
         tools:layout="@layout/fragment_movie"/>
-    <fragment
-        android:id="@+id/titleFragment2"
-        android:name="com.example.bowl.TitleFragment"
-        android:label="TitleFragment"
-        tools:layout="@layout/fragment_title"
-        app:startDestination="@id/action_titleFragment2_to_movieFragment">
-        <action
-            android:id="@+id/action_titleFragment2_to_movieFragment"
-            app:destination="@id/movieFragment" />
-    </fragment>
 </navigation>

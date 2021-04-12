@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    tools:context="com.example.android.navigation.MovieFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="104dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="422dp"
+            android:layout_marginBottom="136dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/movies" />
+
         <TextView
             android:id="@+id/textView"
-            android:layout_width="253dp"
-            android:layout_height="138dp"
-            android:fontFamily="monospace"
-            android:text="@string/movie_heading"
+            android:layout_width="154dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="219dp"
+            android:layout_marginBottom="116dp"
+            android:text="@string/movie_sub"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="233dp" />
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/songs" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="196dp"
+            android:layout_height="142dp"
+            android:text="@string/movie_1"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</layout>
